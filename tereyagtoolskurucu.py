@@ -1,11 +1,11 @@
 import os
 import urllib.request
 import zipfile
+import time
 
 
 
-
-print("TereyagTools Kurucuya Hoş Geldin!")
+print("TereyagTools Kurucuya Hoş Geldin! V0.7")
 
 input("Başlamak İçin Enter'a basın.")
 print("TereyagTools || {}\\TereyagTools || konumuna kuruluyor.".format(os.path.expanduser('~')))
@@ -36,7 +36,7 @@ with zipfile.ZipFile('needlefiles.zip', 'r') as zip_ref:
 
 print("Zip dosyası siliniyor...")
 
-# Zip dosyasını silebilirsiniz
+# Zip dosyasını sil
 os.remove('needlefiles.zip')
 
 print("Dosyalar tereyagtoolscache konumundan TereyagTools konumuna kopyalanıyor...")
@@ -44,12 +44,25 @@ print("Dosyalar tereyagtoolscache konumundan TereyagTools konumuna kopyalanıyor
 
 os.system("xcopy %USERPROFILE%\\tereyagtoolscache\\TereyagTools %USERPROFILE%\\TereyagTools /s /e /y /c /q")
 
-print("Masaüstüne kısayol kopyalanıyor...")
+print("||||    ----Başlat menüsünde TereyagTools' u bulabilirsiniz.----    ||||")
 
-os.system("xcopy %USERPROFILE%\\tereyagtoolscache\\TereyagTools.lnk %USERPROFILE%\\Desktop /s /e /y /c /q")
+os.system('xcopy %USERPROFILE%\\tereyagtoolscache\\TereyagTools.lnk "%USERPROFILE%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs" /s /e /y /c /q')
 
 print("İşlemler bitti, TereyagTools başarıyla kuruldu.")
 
+time.sleep(1000)
+
+print("Python gereklidir. Eğer cihazınızda Python yüklü değilse https://www.python.org/downloads/ adresinden indirin.")
 
 
-kapat = input("Enter'a basıp kapatın!")
+
+
+
+
+
+kapat = input("Programı kapatmak ve TereyagTools' u açmak için Enter tuşuna basın.")
+
+
+os.system("cls")
+
+os.system("python %USERPROFILE%\\TereyagTools\\toollauncher.py")
