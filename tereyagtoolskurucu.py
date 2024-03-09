@@ -1,7 +1,7 @@
 import os
 import urllib.request
 import zipfile
-import time
+
 
 
 
@@ -50,7 +50,6 @@ os.system('xcopy %USERPROFILE%\\tereyagtoolscache\\TereyagTools.lnk "%USERPROFIL
 
 print("İşlemler bitti, TereyagTools başarıyla kuruldu.")
 
-time.sleep(1000)
 
 print("Python gereklidir. Eğer cihazınızda Python yüklü değilse https://www.python.org/downloads/ adresinden indirin.")
 
