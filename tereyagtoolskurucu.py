@@ -17,7 +17,7 @@ tereyagtoolscache_path = os.path.join(os.path.expanduser('~'), 'tereyagtoolscach
 os.makedirs(tereyagtools_path, exist_ok=True)
 os.makedirs(tereyagtoolscache_path, exist_ok=True)
 
-kapat = input("Uyarı! Devam ederseniz 1MB internet ve disk alanı kullanılacaktır! Devam etmek için Enter tuşuna basın.")
+kapat = input("Uyarı! Devam ederseniz 25MB internet ve disk alanı kullanılacaktır! Devam etmek için Enter tuşuna basın.")
 
 
 print("Zip dosyası indiriliyor...")
