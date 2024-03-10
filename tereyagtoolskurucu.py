@@ -5,10 +5,10 @@ import zipfile
 
 
 
-print("TereyagTools Kurucuya Hoş Geldin! V0.7")
-
+print("TereyagTools Kurucuya Hoş Geldin! V1.0")
+print("(Python kurduktan sonra cihazınızı yeniden başlatın. Aksi takdirde kurulum hatalar ile sonuçlanır!!!)")
 input("Başlamak İçin Enter'a basın.")
-print("TereyagTools || {}\\TereyagTools || konumuna kuruluyor.".format(os.path.expanduser('~')))
+print("TereyagTools, || {}\\TereyagTools || konumuna kuruluyor.".format(os.path.expanduser('~')))
 
 print("Klasörler kullanıcı ana dizinine yerleştiriliyor...")
 tereyagtools_path = os.path.join(os.path.expanduser('~'), 'TereyagTools')
