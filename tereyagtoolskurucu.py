@@ -2,8 +2,8 @@ import os
 import urllib.request
 import zipfile
 
-
-
+print("merhaba, kurucunun ve indirdiği sürümün desteği bitti eski sürümde takılmak istemezsin değil mi? github.com/tereyagburak/tereyagtools/releases sitesinden son sürümü indir. ")
+amaya = input("Devam etmek için Enter'a basın.")
 
 print("TereyagTools Kurucuya Hoş Geldin! V1.0")
 print("(Python kurduktan sonra cihazınızı yeniden başlatın. Aksi takdirde kurulum hatalar ile sonuçlanır!!!)")
